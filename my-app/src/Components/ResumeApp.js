@@ -15,7 +15,7 @@ const ResumeApp = () => {
       formData.append('resume_text', resumeText);
       formData.append('job_description', jobDesc);
 
-      const response = await fetch('https://resume-web-96jp.onrender.com//relevance_score', {
+      const response = await fetch('https://resume-web-96jp.onrender.com/relevance_score', {
         method: 'POST',
         body: formData,
       });
