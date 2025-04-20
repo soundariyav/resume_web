@@ -1,0 +1,56 @@
+venv/
+New_dataset_1.ipynb
+.env
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+ENV/
+*.egg-info/
+*.eggs/
+build/
+dist/
+*.log
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+
+# React
+node_modules/
+build/
+*.log
+*.env
+
+# .env files (for sensitive data like API keys)
+.env
+
+# VS Code settings
+.vscode/
+
+# PyCharm settings
+.idea/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# Other possible temporary files
+*.bak
+*.swp
+
+test.py
+train.py
+train_model.ipynb
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+Thumbs.db
