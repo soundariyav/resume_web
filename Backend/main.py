@@ -22,7 +22,15 @@ ps=PorterStemmer()
 import nltk
 from fastapi.middleware.cors import CORSMiddleware
 import os
+from fastapi.middleware.cors import CORSMiddleware
 
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # Or replace * with your frontend URL for more security
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 # Your FastAPI app
 app = FastAPI()
 
