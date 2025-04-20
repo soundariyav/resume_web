@@ -85,7 +85,6 @@ openai_api_key = os.getenv("OPENAI_API_KEY")
 
 # Use the API key in your code
 openai.api_key = openai_api_key
-#openai.api_key =  "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"
 
 
 # Generate resume using OpenAI LLM
