@@ -24,6 +24,9 @@ from fastapi.middleware.cors import CORSMiddleware
 import os
 from fastapi.middleware.cors import CORSMiddleware
 
+
+# Your FastAPI app
+app = FastAPI()
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],  # Or replace * with your frontend URL for more security
@@ -31,9 +34,6 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
-# Your FastAPI app
-app = FastAPI()
-
 # CORS configuration
 @app.get("/")
 def read_root():
