@@ -27,7 +27,9 @@ import os
 app = FastAPI()
 
 # CORS configuration
-
+@app.get("/")
+def read_root():
+    return {"message": "Welcome to the Resume Web API!"}
 
 nltk.download('punkt')
 nltk.download('stopwords')
