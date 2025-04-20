@@ -15,7 +15,7 @@ const ResumeApp = () => {
       formData.append('resume_text', resumeText);
       formData.append('job_description', jobDesc);
 
-      const response = await fetch('/relevance_score', {
+      const response = await fetch('https://resume-web-96jp.onrender.com//relevance_score', {
         method: 'POST',
         body: formData,
       });
@@ -34,7 +34,7 @@ const ResumeApp = () => {
       formData.append('existing_resume', resumeText);
       formData.append('job_description', jobDesc);
 
-      const response = await fetch('/optimize_resume', {
+      const response = await fetch('https://resume-web-96jp.onrender.com/optimize_resume', {
         method: 'POST',
         body: formData,
       });
@@ -52,7 +52,7 @@ const ResumeApp = () => {
       const formData = new FormData();
       formData.append('resume', resumeText);
 
-      const response = await fetch('/predict-category', {
+      const response = await fetch('https://resume-web-96jp.onrender.com/predict-category', {
         method: 'POST',
         body: formData,
       });
